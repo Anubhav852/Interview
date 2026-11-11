@@ -1,4 +1,4 @@
-﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GRIT Layover</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GRIT Layover</title><style>
 :root{--g:#1E5B4F;--t:#C8532E;--ink:#14302B;--bg:#EDE3D0;--c:#FBF7EC;--l:rgba(20,48,43,.2)}
 *{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 header,nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 20px;background:var(--c);border-bottom:1px solid var(--l)}
@@ -86,4 +86,6 @@ function render(){const R={student:[['home','Home'],['book','Book interview'],['
 document.addEventListener('click',e=>{const el=e.target.closest('[data-a]');if(!el||el.disabled)return;const f=A[el.dataset.a];if(f){f(el.dataset);save();render()}});
 document.addEventListener('change',e=>{const c=e.target.dataset.c;if(c){ui[c]=e.target.value;ui.slot=null;ui.day=null;render()}});
 render();
-</script></body></html>
+</script><script src="extras.js"></script><script src="patch.js"></script><script src="patch2.js"></script></body></html>
+
+
